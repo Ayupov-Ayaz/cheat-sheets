@@ -59,3 +59,10 @@
     }
  }
 
+// Использование:
+
+// Создаем нашу фабрику класса
+$transportFactory = new TransportFactory();
+
+// Получаем результат метода delivery исходя из переданного значения 
+$transportFactory->delivery(15);
