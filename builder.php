@@ -88,7 +88,7 @@
 
 
     // Использование:
-    $user = new UserBuilder(); // Создаем класс строителя 
-    $user = $user->phone('89870616987')->surname('Аюпов')->name('Аяз')->address('г.Казань')->age(26)->build(); // Передаем в любом порядке наши переменные, в конце вызываем метод build()
+    $userBuilder = new UserBuilder(); // Создаем класс строителя 
+    $user = $userBuilder->phone('89870616987')->surname('Аюпов')->name('Аяз')->address('г.Казань')->age(26)->build(); // Передаем в любом порядке наши переменные, в конце вызываем метод build()
     echo '<pre>';
     var_dump($user); // Получаем класс User
