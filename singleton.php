@@ -46,3 +46,16 @@
          return $this->properties[$key];
      }
  }
+
+ // Пример использования:
+
+ // Определяем 3 переменные и присваиваем им экземпляр класса Settings
+ $settings1 = Settings::getInstance();
+ $settings2 = Settings::getInstance();
+ $settings3 = Settings::getInstance();
+
+ echo 'Тут мы можем увидеть, что все наши экземпляры класса это на самом деле один и тотже экземляр: <pre>';
+ var_dump($settings1);
+ var_dump($settings2);
+ var_dump($settings3);
+
