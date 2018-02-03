@@ -57,3 +57,13 @@
     }
  }
 
+
+ // Использование Factory:
+
+// Создаем класс Фабрика
+ $transportFactory = new TransportFactory();
+
+ // Даем указание на создать транспорт исходя из веса груза
+ $transport = $transportFactory->create(50);
+
+ $transport->delivery();
